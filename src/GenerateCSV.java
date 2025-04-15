@@ -34,6 +34,7 @@ public class GenerateCSV {
 
             for (int size : sizes) {
                 String filename = size / 1000 + "k_intsAscending.csv";
+
                 try (BufferedWriter writer = new BufferedWriter(new FileWriter(filename))) {
                     for (int i = 0; i < size; i++) {
                         writer.write(i + "\n");  // Numbers will be 0, 1, 2, ..., size-1

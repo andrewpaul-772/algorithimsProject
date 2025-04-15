@@ -7,7 +7,7 @@ import java.time.LocalDateTime;
 public class Main {
     public static void main(String[] args) {
         // 1. Read CSV file
-        String csvFile = "25k_intsRandomBig.csv";
+        String csvFile = "25k_intsEvenlyPartitioned.csv";
         int[] originalArray;
 
         try (BufferedReader br = new BufferedReader(new FileReader(csvFile))) {
@@ -35,7 +35,7 @@ public class Main {
 
 // 4. Only sorting operations (no array copying here)
         for (int i = 0; i < 10; i++) {
-            CountingSort.countingSort(copies[i]);
+            QuickSort.quickSort(copies[i]);
         }
 
 // 5. End timer
@@ -46,7 +46,7 @@ public class Main {
 
 
         // 1. Read CSV file
-        csvFile = "50k_intsRandomBig.csv";
+        csvFile = "50k_intsEvenlyPartitioned.csv";
 
 
         try (BufferedReader br = new BufferedReader(new FileReader(csvFile))) {
@@ -73,7 +73,7 @@ public class Main {
 
 // 4. Only sorting operations (no array copying here)
         for (int i = 0; i < 10; i++) {
-            CountingSort.countingSort(copies[i]);
+            QuickSort.quickSort(copies[i]);
         }
 
 // 5. End timer
@@ -85,7 +85,7 @@ public class Main {
 
 
         // 1. Read CSV file
-        csvFile = "75k_intsRandomBig.csv";
+        csvFile = "75k_intsEvenlyPartitioned.csv";
 
 
         try (BufferedReader br = new BufferedReader(new FileReader(csvFile))) {
@@ -112,7 +112,7 @@ public class Main {
 
 // 4. Only sorting operations (no array copying here)
         for (int i = 0; i < 10; i++) {
-            CountingSort.countingSort(copies[i]);
+            QuickSort.quickSort(copies[i]);
         }
 
 // 5. End timer
@@ -123,7 +123,7 @@ public class Main {
 
 
         // 1. Read CSV file
-        csvFile = "100k_intsRandomBig.csv";
+        csvFile = "100k_intsEvenlyPartitioned.csv";
 
 
         try (BufferedReader br = new BufferedReader(new FileReader(csvFile))) {
@@ -150,7 +150,7 @@ public class Main {
 
 // 4. Only sorting operations (no array copying here)
         for (int i = 0; i < 10; i++) {
-            CountingSort.countingSort(copies[i]);
+            QuickSort.quickSort(copies[i]);
         }
 
 // 5. End timer

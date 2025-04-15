@@ -1,19 +1,25 @@
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
 
 public class MergeSort {
-    public static void mergeSort(int[] A, int p, int r) {
+    // Public wrapper method that only takes the array as input
+    public static void mergeSort(int[] array) {
+        // Call the recursive helper method with the full range of indices
+        if (array != null) {
+            mergeSortHelper(array, 0, array.length - 1);
+        }
+    }
+
+    // Private helper method with the original implementation
+    private static void mergeSortHelper(int[] A, int p, int r) {
         if (p < r) {
             int q = (p + r) / 2;
-            mergeSort(A, p, q);
-            mergeSort(A, q + 1, r);
+            mergeSortHelper(A, p, q);
+            mergeSortHelper(A, q + 1, r);
             merge(A, p, q, r);
         }
     }
 
-    public static void merge(int[] A, int p, int q, int r) {
+    private static void merge(int[] A, int p, int q, int r) {
         int n1 = q - p + 1;
         int n2 = r - q;
 
@@ -51,10 +57,8 @@ public class MergeSort {
         int[] array = {34, 7, 23, 32, 5, 62};
         System.out.println("Original array: " + Arrays.toString(array));
 
-        // Sort the array using mergeSort
-        mergeSort(array, 0, array.length-1);
+        // Sort the array using the simplified mergeSort that only takes the array
+        mergeSort(array);
         System.out.println("Sorted array: " + Arrays.toString(array));
-
     }
-
 }
