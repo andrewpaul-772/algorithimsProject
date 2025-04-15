@@ -16,8 +16,10 @@ public class BubbleSort {
     }
 
     public static void main(String[] args) {
-        int[] arr = {4, 6, 1, 6, 2, 1, 0, 3, -5, -100, 1000, -300};
+        int[] arr = {4, 6, 1, 6, 2, 1, 0, 3, -5, -100, 1000, -300, 500, 20, 50};
+        System.out.println(java.time.LocalDateTime.now());
         bubbleSort(arr);
+        System.out.println(java.time.LocalDateTime.now());
         System.out.println("After sorting: " + Arrays.toString(arr));
     }
 }
