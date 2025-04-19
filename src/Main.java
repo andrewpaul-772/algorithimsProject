@@ -18,7 +18,7 @@ public class Main {
             System.err.println("Error reading file: " + e.getMessage());
             return;
         }
-
+        System.out.println("-----------Start------------");
         System.out.println("Array size: " + originalArray.length);
 
         // 2. Create all 400 copies upfront (not part of timed operation)
@@ -42,7 +42,7 @@ public class Main {
         long endTime = System.currentTimeMillis();
         System.out.println("Sort end time: " + LocalDateTime.now());
 
-        System.out.println("Total time = " + (endTime - startTime) + " ms \n finished\n");
+        System.out.println("Total time = " + (endTime - startTime) + " ms \n --------Finished-------- \n");
 
 
         // 1. Read CSV file
@@ -57,8 +57,9 @@ public class Main {
             System.err.println("Error reading file: " + e.getMessage());
             return;
         }
-
+        System.out.println("-----------Start------------");
         System.out.println("Array size: " + originalArray.length);
+
 
         // 2. Create all 400 copies upfront (not part of timed operation)
         for (int i = 0; i < 10; i++) {
@@ -80,7 +81,7 @@ public class Main {
         endTime = System.currentTimeMillis();
         System.out.println("Sort end time: " + LocalDateTime.now());
 
-        System.out.println("Total time = " + (endTime - startTime) + " ms \n finsihed\n");
+        System.out.println("Total time = " + (endTime - startTime) + " ms \n --------Finished-------- \n");
 
 
 
@@ -96,9 +97,8 @@ public class Main {
             System.err.println("Error reading file: " + e.getMessage());
             return;
         }
-
+        System.out.println("-----------Start------------");
         System.out.println("Array size: " + originalArray.length);
-
         // 2. Create all 400 copies upfront (not part of timed operation)
         for (int i = 0; i < 10; i++) {
             copies[i] = Arrays.copyOf(originalArray, originalArray.length);
@@ -119,7 +119,7 @@ public class Main {
         endTime = System.currentTimeMillis();
         System.out.println("Sort end time: " + LocalDateTime.now());
 
-        System.out.println("Total time = " + (endTime - startTime) + " ms \n finsihed\n");
+        System.out.println("Total time = " + (endTime - startTime) + " ms \n --------Finished-------- \n");
 
 
         // 1. Read CSV file
@@ -134,9 +134,8 @@ public class Main {
             System.err.println("Error reading file: " + e.getMessage());
             return;
         }
-
+        System.out.println("-----------Start------------");
         System.out.println("Array size: " + originalArray.length);
-
         // 2. Create all 400 copies upfront (not part of timed operation)
         for (int i = 0; i < 10; i++) {
             copies[i] = Arrays.copyOf(originalArray, originalArray.length);
@@ -157,7 +156,7 @@ public class Main {
         endTime = System.currentTimeMillis();
         System.out.println("Sort end time: " + LocalDateTime.now());
 
-        System.out.println("Total time = " + (endTime - startTime) + " ms \n finsihed\n");
+        System.out.println("Total time = " + (endTime - startTime) + " ms \n --------Finished-------- \n");
     }
 
 }
