@@ -21,7 +21,7 @@ public class Main {
         System.out.println("-----------Start------------");
         System.out.println("Array size: " + originalArray.length);
 
-        // 2. Create all 400 copies upfront (not part of timed operation)
+        // 2. Create all 10 copies upfront (not part of timed operation)
         int[][] copies = new int[10][];
         for (int i = 0; i < 10; i++) {
             copies[i] = Arrays.copyOf(originalArray, originalArray.length);
@@ -61,7 +61,7 @@ public class Main {
         System.out.println("Array size: " + originalArray.length);
 
 
-        // 2. Create all 400 copies upfront (not part of timed operation)
+        // 2. Create all 10 copies upfront (not part of timed operation)
         for (int i = 0; i < 10; i++) {
             copies[i] = Arrays.copyOf(originalArray, originalArray.length);
         }
@@ -99,7 +99,7 @@ public class Main {
         }
         System.out.println("-----------Start------------");
         System.out.println("Array size: " + originalArray.length);
-        // 2. Create all 400 copies upfront (not part of timed operation)
+        // 2. Create all 10 copies upfront (not part of timed operation)
         for (int i = 0; i < 10; i++) {
             copies[i] = Arrays.copyOf(originalArray, originalArray.length);
         }
@@ -136,7 +136,7 @@ public class Main {
         }
         System.out.println("-----------Start------------");
         System.out.println("Array size: " + originalArray.length);
-        // 2. Create all 400 copies upfront (not part of timed operation)
+        // 2. Create all 10 copies upfront (not part of timed operation)
         for (int i = 0; i < 10; i++) {
             copies[i] = Arrays.copyOf(originalArray, originalArray.length);
         }
